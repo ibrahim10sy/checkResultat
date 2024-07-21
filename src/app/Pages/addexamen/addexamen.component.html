@@ -1,1 +1,28 @@
-<p>addexamen works!</p>
+<div class="container">
+    <div class="forms">
+        <form action="">
+
+            <div>
+                <label for="libelle">Libellé examen</label>
+                <input type="text" id="libelle" name="libelle">
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description">
+            </div>
+            <div>
+                <label for="annee">Année</label>
+                <input type="date" id="annee" name="annee">
+            </div>
+            <div>
+                <label for="fiche">Fiche de résultat</label>
+                <input type="file" id="fiche" name="fiche">
+            </div>
+
+            <div>
+                <button type="submit">Ajouter</button>
+                <button type="reset" (click)="annuler()">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>

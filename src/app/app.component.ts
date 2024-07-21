@@ -7,6 +7,8 @@ import { SidebarComponent } from './Pages/sidebar/sidebar.component';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 interface SideNavToggle {
   screenWidht : number;
@@ -18,9 +20,11 @@ interface SideNavToggle {
   imports: [
     CommonModule,
     RouterOutlet,
+    MatDialogModule,
     HomePageComponent,
     RouterLink, RouterLinkActive,
     BodyComponent,
+    MatFormFieldModule,
     SidebarComponent,
     DashboardComponent,
     LoginComponent,
