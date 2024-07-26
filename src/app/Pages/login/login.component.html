@@ -20,11 +20,14 @@
 
         <div class="input-field">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Mot de passe" formControlName="motDePasse" required>
+            <input type="password" placeholder="Mot de passe" formControlName="password" required>
         </div>
 
         <div class="btn">
-            <button  type="submit" (click)="goToDashboard()" >Se connecter</button>
+            <button  type="submit"  [disabled]="creatingTweet">
+                Se connecter
+                <span class="spinner-border spinner-border-sm" *ngIf="creatingTweet"></span>
+            </button>
         </div>
     </form>
 </div>

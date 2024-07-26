@@ -9,11 +9,9 @@ import { LoginComponent } from './Pages/login/login.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
-interface SideNavToggle {
-  screenWidht : number;
-  collapsed : boolean;
-}
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -29,6 +27,7 @@ interface SideNavToggle {
     DashboardComponent,
     LoginComponent,
     PageNotFoundComponent,
+    HttpClientModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
